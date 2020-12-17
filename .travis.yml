@@ -8,4 +8,4 @@ before_install:
   - docker build -t ctouchdocks/docker-travis-code30 -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true ctouchdocks/docker-travis-code30 npm test
+  - docker run -e CI=true ctouchdocks/docker-travis-code30 npm run test
