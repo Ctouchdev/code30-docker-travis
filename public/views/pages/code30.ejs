@@ -1,0 +1,280 @@
+<%- include("../partials/header"); %>
+
+<body>
+ 
+
+  <section id="title">
+
+    
+
+      <!-- Title -->
+
+      <div class="title-container">
+
+          <div class="logo-container">
+            <img src="/images/code30-logo-haxer.svg" alt="code-30" class="rotateLogo">
+          </div>
+
+          <h1 class="big-heading">When it's Time to Learn, it's Time to Code.</h1>
+          <div class="btn-wrap">
+            <div class="btn-container">
+              <button onclick="window.location.href='#features'" type="button" class="btn btn-outline-light btn-lg mr-3"><i class="fas fa-code"></i> Click to Reveal Thy Source Code</button>
+            </div>
+            <div class="btn-container">
+              <button onclick="window.location.href='/newsnippet'" id="modal-btn" type="button" class="modal-btn btn btn-outline-light btn-lg mr-3"><i class="fas fa-code"></i> Create a code snippet!</button>
+            </div>
+          </div>
+      </div>
+         
+        
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script>
+            $().ready(() => {
+              $.get("/api/user")
+                .then((resp) => {
+                  $("#user").text("Welcome, " + resp.user.name);
+                  $("#logout").show();
+                  $("#login").hide();
+                });
+            });
+          </script>
+
+        
+
+          <!-- <script>
+            function openModal() {
+              $("#modal-btn").on("click", function() {
+                $("#modelWindow").show();
+              });
+            }
+          </script> -->
+  </section>
+  
+
+  <!-- Features -->
+  <div class="features-container">
+
+  <section id="features">
+
+
+    
+
+
+    <% snipContent.forEach(function(post) { %>
+
+      
+      
+      <!-- <script>
+        function delModal(entity) {
+          $("#<%= post.title %>").show();
+              $("#<%= post.title %>").remove();
+              $(".<%= post.title %>").remove().empty();
+              modal.find(".modal-body.entityType").html(entity);
+              modal.modal("hide");
+            }
+      </script> -->
+      
+
+      <!-- <h3 class="h3-md"><%= post.title %></h3>
+      <p class="p-md"><%= post.content.substring(0, 100) %> ...</p>
+      <a href="/posts/<%= post.title %>">Read More</a>
+      <hr> -->
+
+      <!-- Modal creation -->
+      <div class="mod-btn-pad">
+      <div class="mod-btn-container">
+      <button type="button" class="modal-btn btn btn-primary <%= post.title %>" data-toggle="modal" data-target="#<%= post.title %>"><%= post.title %></button>
+    </div>
+      <form action="/code30" method="post">
+        <form>
+          <div class="del-btn-container">
+        <button onclick="{var clicked = true}" type="submit" data-toggle="modal" class="btn btn-primary del-btn"><i class="fas fa-trash-alt fa-sm text-white"></i></button>
+      </div>
+      </form>
+      </form>
+    
+  </div>
+      
+      <!-- Central Modal Medium Info -->
+    <div class="modal fade" id="<%= post.title %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog model-dialog-centered modal-dialog-scrollable modal-notify modal-info modal-lg" role="document">
+        <!--Content-->
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header blue-back">
+            <p class="heading lead white-color"><%= post.title %></p>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="white-text">&times;</span>
+            </button>
+          </div>
+
+          <!--Body-->
+          <div class="modal-body">
+            <div class="text-center">
+        
+                <div class="modal-body-container">
+                  <h3 class="blue-color"><%= post.title %></h3>
+                  <p class="white-space"><%= post.content %></p>
+                </div>
+          
+            </div>
+          </div>
+
+          <!--Footer-->
+          <div class="justify-content-center">
+            <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Exit</a>
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    <!-- Modal End -->
+
+      <% }) %>
+
+
+      <footer class="footer-container">
+        <p class="copywrite-text">&copy; theIBMapprentice</p>
+    </footer>
+  </section>
+</div>
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <!-- <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="med-heading">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="logo-grow testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="logo-grow testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div> -->
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <!-- <img class="pres-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="pres-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="pres-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="pres-logo" src="images/mashable.png" alt="mashable-logo"> -->
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+    <!-- <div class="container-fluid text-center">
+      <h2 class="pricing-heading">A Plan for Every Dog's Needs</h2>
+      <p>Simple and affordable price plans for you and your dog.</p>
+    </div>
+
+    <div class="row card-pad">
+
+      <div class="card-pad col-lg-4 text-center">
+        <div class="logo-grow card mb-3 box-shadow">
+          <div class="card-header">
+            <h3 class="my-0 font-weight-normal">Chihuahua</h3>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title pricing-card-title">FREE<small class="text-muted"></small></h2>
+            <ul class="list-prices list-unstyled mt-3 mb-4 d-flex flex-column">
+              <li>5 Matches Per Day</li>
+              <li>10 Messagers Per Day</li>
+              <li>Unlimited App Usage</li>
+            </ul>
+            <button type="button" class="btn-sign-up btn-lg btn-block btn-outline-danger mt-auto">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-pad col-lg-4 text-center">
+        <div class="logo-grow card mb-3 box-shadow">
+          <div class="card-header">
+            <h3 class="my-0 font-weight-normal">Labrador</h3>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title pricing-card-title">$49 <small class="text-muted">/ mo</small></h2>
+            <ul class="list-prices list-unstyled mt-3 mb-4 d-flex flex-column">
+              <li>Unlimited Matches</li>
+              <li>Unlimited Messages</li>
+              <li>Unlimited App Usage</li>
+            </ul>
+            <button type="button" class="btn-sign-up btn-lg btn-block btn-outline-danger mt-auto">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-pad col-lg-4 text-center">
+        <div class="logo-grow card mb-3 box-shadow">
+          <div class="card-header">
+            <h3 class="my-0 font-weight-normal">Mastiff</h3>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title pricing-card-title">$99 <small class="text-muted">/ mo</small></h2>
+            <ul class="list-prices list-unstyled mt-3 mb-4 d-flex flex-column">
+              <li>Priority Listing</li>
+              <li>Unlimited Messages + Matches</li>
+              <li>Unlimited App Usage</li>
+            </ul>
+            <button type="button" class="btn-sign-up btn-lg btn-block btn-outline-danger mt-auto">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <!-- <div class="continer-fluid text-center">
+      <div class="bottom-sec">
+        <h1 class="big-heading">Find the True Love of Your Dog's Life Today.</h1>
+        <div class="bottom-btn-pad">
+          <button type="button" class="btn btn-dark btn-lg mr-3"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg mr-3"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+      </div>
+
+    </div> -->
+  
+  </section>
+
+
+  <!-- Footer -->
+
+  
+
+  <!-- Local JS -->
+  <script src="./practice.js" charset="utf-8"></script>
+  <script>
+    $(document).ready(function () {
+      $(this).find(".del-btn-container").hide();
+    $(document).on('mouseenter', '.mod-btn-pad', function () {
+        $(this).find(".del-btn-container").show();
+    }).on('mouseleave', '.mod-btn-pad', function () {
+        $(this).find(".del-btn-container").hide();
+    });
+});
+  </script>
+</body>
+
+</html>

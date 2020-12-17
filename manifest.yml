@@ -1,0 +1,6 @@
+applications:
+- name: Code30CloudFoundry
+  memory: 256M
+  command: node app.js
+  services:
+  - appID-for-code30

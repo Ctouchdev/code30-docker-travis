@@ -1,0 +1,920 @@
+
+body, html {
+  background-image: url("/images/Code30-LandingPage-final2.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  max-height: 100%;
+  position: fixed;
+}
+
+.main-container {
+  height: 100%;
+  margin-top: 1.4%;
+  margin-left: 3.4%;
+  padding: 0%!important;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+.heading-container {
+  flex:1;
+  width: 72%;
+  padding: 12% 0% 4% 0%;
+  margin-right: -4%;
+}
+
+.heading-pad {
+  flex-grow:1;
+  width: 0%;
+}
+
+.center-container {
+  margin-top: .2%;
+  margin-right: 0%;
+  width: 100%;
+  flex:1;
+}
+
+.center-pad {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 32%;
+  padding-right: 32%;
+}
+
+.laptop-container {
+  flex:1;
+  margin: -6%!important;
+  padding: 0%!important;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo-rotate {
+  transform: rotate(0deg);
+  filter: drop-shadow(1.6px 1.6px 2.4px #2a2aac30);
+  padding-bottom: 6%;
+  padding-left: 2%;
+  width: 92%;
+  transform-origin: center;
+}
+
+.logo-grow {
+  transition: .2s ease-out;
+}
+
+.logo-grow:hover {
+  transform: scale(1.02);
+}
+
+.browse-tagline {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  color: #FFF;
+  text-align: center;
+  padding-top: 0;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-bottom: 10px!important;
+}
+
+hr {
+  z-index: 2;
+}
+
+.hr-pad {
+  height:2px;
+  width:80%;
+  border-width:0;
+  background: linear-gradient(to right, #ffffff00 0, #f8a500 50%, #ffffff00 100%);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.signin-text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgb(71, 215, 255);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.signin-text:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+.index-container {
+  padding-top: 2.5%;
+  padding-left: 4%;
+  text-align: center;
+  background-position: center;
+  position: absolute;
+  left: 50%;
+  justify-content: center;
+}
+
+.success-container {
+  text-align: center;
+  padding-top: 7%;
+}
+
+.big-heading {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 4.3rem;
+  line-height: 1.5;
+  color: #FFF;
+  text-shadow: 1.6px 1.6px 2.4px rgba(0, 0, 0, 0.156);
+  padding-left: 5%;
+}
+
+.med-heading {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.1;
+  color: #FFF;
+  padding-bottom: 2%;
+}
+
+.code30-laptop {
+  position: relative;
+  bottom: 1rem;
+  left: .2rem;
+  width: 115%;
+  height: 115%;
+  transition: 1.1s;
+}
+
+.code30-laptop:hover {
+  position: relative;
+  bottom: 2.5rem;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  filter: drop-shadow(6px 10px 1.2px #2a2aac30);
+}
+
+/* .button-signup {
+  background-color: #FFA600;
+  border: none;
+  justify-content: center;
+  margin-top: 7%;
+  color: white;
+  padding-top: 9px;
+  padding-bottom: 9.4px;
+  padding-left: 1px;
+  padding-right: 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: .4s;
+  border-radius: 16px;
+} */
+
+
+.button-signup-container {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.success-text {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #FFF;
+  text-align: center;
+}
+
+.copywrite-text {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: .88rem;
+  color: #FFF;
+  text-align: center;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 485px;
+  padding-left: 40px;
+  margin: auto;
+}
+
+.button {
+  min-height: 6%;
+  height: 6%;
+  width: 25%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: #F8A500;
+background: linear-gradient(90deg, rgb(235, 192, 0) 0%, rgb(223, 146, 3) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(255, 255, 255, 0.122);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: .2%;
+  }
+
+button::before {
+content: '';
+  border-radius: 0px;
+  min-width: calc(300px);
+  min-height: calc(30px + 12px);
+  border: 3px solid #c4e4ff6a;
+  animation: button-glow 2s ease alternate infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: .7%;
+  padding-bottom: .5%;
+  width: 100%;
+}
+@keyframes button-glow {
+  from {
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.864);
+  }
+  to {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.button:hover, .button:focus {
+  color: #ffffff;
+  background: linear-gradient(90deg, rgba(68, 137, 255, 0.517) 0%, rgba(0, 122, 228, 0.503) 100%);
+  transform: translateY(4px);
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: .2%;
+  width: 100%;
+  border-radius: 0px;
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #ffffff3b;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: .2%;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+  
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 160px;
+    height: 160px;
+    opacity: 0;
+  }
+}
+
+#laptop-bottom {
+  animation: lap-bot 5s ease-in-out alternate infinite;
+  transform-origin: center;
+}
+
+@keyframes lap-bot {
+  from {
+    transform: translateX(0px);
+  } to {
+    transform: translateX(13px);
+  }
+}
+
+#laptop-top {
+  animation: lap-top 5s ease-in-out alternate infinite;
+  transform-origin: center;
+}
+
+@keyframes lap-top {
+  from {
+    transform: translateY(0px);
+  } to {
+    transform: translateY(5px);
+  }
+}
+
+#keyboard {
+  animation: keys 5s ease-in-out alternate infinite;
+  transform-origin: center;
+}
+
+@keyframes keys {
+  from {
+    transform: translateY(0px) translateX(-15px) scaleY(1.2) scaleX(1.2);
+  } to {
+    transform: translateY(5px) translateX(-15px) scaleY(1.2) scaleX(1.2);
+  }
+}
+
+#disk-front {
+  animation: disk-frnt 5s alternate infinite;
+  transform-origin: 90% 10%;
+  transform-box: fill-box;
+}
+
+@keyframes disk-frnt {
+  from {
+    transform: rotateX(0deg);
+  } to {
+    transform: rotateX(30deg);
+  }
+}
+
+#lines-front {
+  animation: line-front 5s ease-in-out alternate infinite;
+  transform-origin: right;
+}
+
+@keyframes line-front {
+  from {
+    transform: skew(0deg,0deg);
+  } to {
+    transform: skew(2deg,-1deg);
+  }
+}
+
+#bubbles-front {
+  animation: bbls-front 23s ease-in-out alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes bbls-front {
+  0% {
+    transform: translateY(8px) scale(1) skewX(5deg);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.2) skewY(5deg);
+  }
+  100% {
+    transform: translateY(8px) scale(1) skewX(-10deg);
+  }
+}
+
+#bubbles-back {
+  animation: bbls-bk 23s ease-in-out alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes bbls-bk {
+  0% {
+    transform: translateY(8px) scale(1) skewX(5deg);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.2) skewY(-1deg);
+  }
+  100% {
+    transform: translateY(8px) scale(1) skewX(-2deg);
+  }
+}
+
+#wave-back {
+  animation: wave-bk 5s ease-in-out alternate infinite;
+  transform-origin: right;
+}
+
+@keyframes wave-bk {
+  from {
+    transform: skew(0deg,0deg);
+  } to {
+    transform: skew(-1deg,1deg);
+  }
+}
+
+
+#fn-key {
+  animation: fn 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes fn {
+  0% {
+    transform: translateY(0px);
+  } 97% {
+    transform: translateY(0px);
+  } 98% {
+    transform: translateY(1.4px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#ctrl {
+  animation: ctl 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes ctl {
+  0% {
+    transform: translateY(0px);
+  } 1% {
+    transform: translateY(1.4px);
+  } 3% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#caps-lock {
+  animation: caps 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes caps {
+  0% {
+    transform: translateY(0px);
+  } 19% {
+    transform: translateY(0px);
+  } 20% {
+    transform: translateY(1.4px);
+  } 22% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#tab {
+  animation: tb 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes tb {
+  0% {
+    transform: translateY(0px);
+  } 89% {
+    transform: translateY(0px);
+  } 90% {
+    transform: translateY(1.4px);
+  } 92% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#f {
+  animation: f-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes f-key {
+  0% {
+    transform: translateY(0px);
+  } 10% {
+    transform: translateY(0px);
+  } 11% {
+    transform: translateY(1.4px);
+  } 13% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#k {
+  animation: k-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes k-key {
+  0% {
+    transform: translateY(0px);
+  } 12% {
+    transform: translateY(0px);
+  } 13% {
+    transform: translateY(1.4px);
+  } 15% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#enter {
+  animation: enter-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes enter-key {
+  0% {
+    transform: translateY(0px);
+  } 20% {
+    transform: translateY(0px);
+  } 21% {
+    transform: translateY(1.4px);
+  } 23% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#backspace {
+  animation: backspace-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes backspace-key {
+  0% {
+    transform: translateY(0px);
+  } 40% {
+    transform: translateY(0px);
+  } 41% {
+    transform: translateY(1.4px);
+  } 43% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#y {
+  animation: y-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes y-key {
+  0% {
+    transform: translateY(0px);
+  } 50% {
+    transform: translateY(0px);
+  } 51% {
+    transform: translateY(1.4px);
+  } 53% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#o {
+  animation: o-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes o-key {
+  0% {
+    transform: translateY(0px);
+  } 59% {
+    transform: translateY(0px);
+  } 60% {
+    transform: translateY(1.4px);
+  } 63% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#e {
+  animation: e-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes e-key {
+  0% {
+    transform: translateY(0px);
+  } 67% {
+    transform: translateY(0px);
+  } 68% {
+    transform: translateY(1.4px);
+  } 69% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#w {
+  animation: w-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes w-key {
+  0% {
+    transform: translateY(0px);
+  } 80% {
+    transform: translateY(0px);
+  } 81% {
+    transform: translateY(1.4px);
+  } 83% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#q {
+  animation: q-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes q-key {
+  0% {
+    transform: translateY(0px);
+  } 10% {
+    transform: translateY(0px);
+  } 11% {
+    transform: translateY(1.4px);
+  } 13% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#escape {
+  animation: escape-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes escape-key {
+  0% {
+    transform: translateY(0px);
+  } 84% {
+    transform: translateY(0px);
+  } 85% {
+    transform: translateY(1.4px);
+  } 87% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#space {
+  animation: space-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes space-key {
+  0% {
+    transform: translateY(0px);
+  } 15% {
+    transform: translateY(0px);
+  } 16% {
+    transform: translateY(1.4px);
+  } 18% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#alt-right {
+  animation: alt-right-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes alt-right-key {
+  0% {
+    transform: translateY(0px);
+  } 60% {
+    transform: translateY(0px);
+  } 61% {
+    transform: translateY(1.4px);
+  } 63% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+.st34 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+  animation: line-1 5s linear alternate infinite;
+}
+@keyframes line-1 {
+  to {
+    stroke-dashoffset: 3;
+  }
+}
+
+.st35 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+  animation: line-2 5s linear alternate infinite;
+}
+@keyframes line-2 {
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+
+.st36 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-3 5s linear alternate infinite;
+}
+@keyframes line-3 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st37 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+  animation: line-4 5s linear alternate infinite;
+}
+@keyframes line-4 {
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+
+.st38 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+  animation: line-5 5s linear alternate infinite;
+}
+@keyframes line-5 {
+  to {
+    stroke-dashoffset: 5;
+  }
+}
+
+.st39 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-6 5s linear alternate infinite;
+}
+@keyframes line-6 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st40 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-7 5s linear alternate infinite;
+}
+@keyframes line-7 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st41{
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-8 5s linear alternate infinite;
+}
+@keyframes line-8 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st42 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-9 5s linear alternate infinite;
+}
+@keyframes line-9 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st43 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-10 5s linear alternate infinite;
+}
+@keyframes line-10 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st44 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-11 5s linear alternate infinite;
+}
+@keyframes line-11 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st45 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-12 5s linear alternate infinite;
+}
+@keyframes line-12 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st46 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-13 5s linear alternate infinite;
+}
+@keyframes line-13 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st47 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-14 5s linear alternate infinite;
+}
+@keyframes line-14 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st48 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-15 5s linear alternate infinite;
+}
+@keyframes line-15 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st49 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-16 5s linear alternate infinite;
+}
+@keyframes line-16 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st50 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-17 5s linear alternate infinite;
+}
+@keyframes line-17 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

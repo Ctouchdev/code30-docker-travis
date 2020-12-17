@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Time2Code</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+  <!-- bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Font Awesome Icons -->
+  <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
+
+  <!-- CSS Stylesheet -->
+  <link rel='stylesheet' href='stylesheets/homeStyles.css'/>
+
+
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+
+  <section id="title">
+
+    <div class="container-fluid">
+<form action="/resources">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand color-change-orange" href="">Time2Code</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/resources">Resources</a>
+            <li class="nav-item">
+                <a class="nav-link" href="/appid/logout" id ="logout">Logout</a>
+            <li class="nav-item">
+                <a class="nav-link" href="/appid/login" id ="login">Login</a>
+          </ul>
+        </div>
+      </nav>
+      </form>
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">When it's Time to Learn, it's Time to Code.</h1>
+          <button onclick="window.location.href='#features'" type="button" class="btn btn-outline-light btn-lg mr-3"><i class="fas fa-code"></i> Click to Reveal Thy Source Code</button>
+        </div>
+        <div class="logo-grow col-lg-6">
+          <img src="/images/code30_2.svg" alt="code-30" class="rotateLogo">
+        </div>
+      </div>
+
+  </section>
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <!-- Modal creation -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CreatingJsVariables">Creating JS Variables
+    </button>
+    <!-- Central Modal Medium Info -->
+    <div class="modal fade" id="CreatingJsVariables" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog model-dialog-centered modal-dialog-scrollable modal-notify modal-info modal-lg" role="document">
+        <!--Content-->
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header blue-back">
+            <p class="heading lead white-color">Creating JS Variables</p>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="white-text">&times;</span>
+            </button>
+          </div>
+
+          <!--Body-->
+          <div class="modal-body">
+            <div class="text-center">
+              <div class="row">
+                <div class="feature-box col-lg-4">
+                  <i class="orange-color fab fa-js fa-3x"></i>
+                  <h3 class="blue-color">Variables</h3>
+                  <p class="white-space">var emp1 = {
+                    name: "John",
+                    age: 26,
+                    likes: ["Cars", " Sports", " Fun"]
+                    };</p>
+                </div>
+                <div class="feature-box col-lg-4">
+                  <i class="orange-color fab fa-js fa-3x"></i>
+                  <h3 class="blue-color">JavaScript</h3>
+                  <p class="white-space">DOM("empName").innerHTML=emp1.name;</p>
+                  <p class="white-space">DOM("empAge").innerHTML=emp1.age;</p>
+                  <p class="white-space">DOM("empLikes").innerHTML=emp1.likes;</p>
+                </div>
+                <div class="feature-box col-lg-4">
+                  <i class="orange-color fas fa-equals fa-3x"></i>
+                  <h3 class="blue-color">Output</h3>
+                  <p id="empName"></p>
+                  <p id="empAge"></p>
+                  <p id="empLikes"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Footer-->
+          <div class="justify-content-center">
+            <a type="button" class="btn btn-primary">Next Modal? <i class="far fa-gem ml-1 text-white"></i></a>
+            <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Exit</a>
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    <!-- Modal End -->
+
+    <!-- Modal creation -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#centralModalInfo">Constructor Functions
+    </button>
+    <!-- Central Modal Medium Info -->
+    <div class="modal fade" id="centralModalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog model-dialog-centered  modal-dialog-scrollable modal-notify modal-info modal-lg" role="document">
+        <!--Content-->
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header blue-back">
+            <p class="heading lead white-color">Constructor Functions</p>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="white-text">&times;</span>
+            </button>
+          </div>
+
+
+          <!--Body-->
+          <div class="modal-body">
+            <div class="text-center">
+              <div class="row">
+                <div class="feature-box col-lg-4">
+                  <i class="orange-color fab fa-js fa-3x"></i>
+                  <h3 class="blue-color">Cons. Function</h3>
+                  <p class="white-space">function Employee (name, age, likes) {
+                    this.name = name;
+                    this.age = age;
+                    this.likes = likes;
+                    }</p>
+                </div>
+                <div class="feature-box col-lg-4">
+                  <i class="orange-color fab fa-js fa-3x"></i>
+                  <h3 class="blue-color">JavaScript</h3>
+                  <p class="white-space">var employee2 = new Employee("Todd", 21, ["Learning", "Movies", "Music"]);</p>
+                  <p class="white-space">DOM("ConsEmpName").innerHTML=employee2.name;</p>
+                  <p class="white-space">DOM("ConsEmpAge").innerHTML=employee2.age;</p>
+                  <p class="white-space">DOM("ConsEmpLikes").innerHTML=employee2.likes;</p>
+                </div>
+                <div class="feature-box col-lg-4">
+                  <i class="orange-color fas fa-equals fa-3x"></i>
+                  <h3 class="blue-color">Output</h3>
+                  <p id="ConsEmpName"></p>
+                  <p id="ConsEmpAge"></p>
+                  <p id="ConsEmpLikes"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Footer-->
+          <div class="justify-content-center">
+            <a type="button" class="btn btn-primary">Next Modal? <i class="far fa-gem ml-1 text-white"></i></a>
+            <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Exit</a>
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    <!-- Modal End -->
+
+    <div class="text-center">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Mouseover</h3>
+          <p class="white-space">$("h1").on("mouseover", function() {
+            $("h1").css("color", "purple");
+            });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Keylog</h3>
+          <p class="white-space">$(document).keypress(function() {
+            console.log(event.key);
+            });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Clicklog</h3>
+          <p class="white-space">$(document).click(function() {
+            console.log(event);
+            });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Add Before</h3>
+          <p class="white-space">$("h1").before("(button)TestNew(/button)");</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Add After</h3>
+          <p class="white-space">$("h1").after("(button)TestNew(/button)");</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Add In Element</h3>
+          <p class="white-space">$("h1").prepend("(button)TestNew(/button)");</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Add In Element</h3>
+          <p class="white-space">$("h1").append("(button)TestNew(/button)");</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Remove All Elements</h3>
+          <p class="white-space">$("button").remove();</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Hide All Elements</h3>
+          <p class="white-space">$("button").on("click", function() {
+            $("h1").hide();
+          });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Toggle All Elements</h3>
+          <p class="white-space">$("button").on("click", function() {
+            $("h1").toggle();
+          });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery FadeOut All Elements</h3>
+          <p class="white-space">$("button").on("click", function() {
+            $("h1").fadeOut();
+          });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery FadeIn All Elements</h3>
+          <p class="white-space">$("button").on("click", function() {
+            $("h1").fadeIn();
+          });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Fade Toggle</h3>
+          <p class="white-space">$("button").on("click", function() {
+            $("h1").fadeToggle();
+          });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Slide Up</h3>
+          <p class="white-space">$("button").on("click", function() {
+            $("h1").slideUp();
+          });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Slide Down</h3>
+          <p class="white-space">$("button").on("click", function() {
+            $("h1").slideDown();
+          });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Slide Toggle</h3>
+          <p class="white-space">$("button").on("click", function() {
+            $("h1").slideToggle();
+          });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Custom Animate</h3>
+          <p class="white-space">$("h2").on("click", function() {
+            $("h2").animate({opacity: .5});
+          });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Animate Chained</h3>
+          <p class="white-space">$("h1").on("click", function() {
+            $("h1").slideUp().slideDown().animate({opacity: .5});
+          });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">jQuery Multiple Elements</h3>
+          <p class="white-space">$("button").on("click", function() {
+            $("h1").slideUp();
+            $("h2").slideUp();
+          });</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">Use Node.js Filesystem</h3>
+          <p class="enter-space">//jshint esversion:6//
+          const fs = require("fs");</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="orange-color fab fa-js fa-3x"></i>
+          <h3 class="blue-color">Node.js Copy File</h3>
+          <p class="enter-space">//jshint esversion:6//
+          fs.copyFileSync("file1.txt", "file2.txt");</p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+  </section>
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <!-- <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="med-heading">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="logo-grow testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="logo-grow testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div> -->
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <!-- <img class="pres-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="pres-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="pres-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="pres-logo" src="images/mashable.png" alt="mashable-logo"> -->
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+    <!-- <div class="container-fluid text-center">
+      <h2 class="pricing-heading">A Plan for Every Dog's Needs</h2>
+      <p>Simple and affordable price plans for you and your dog.</p>
+    </div>
+
+    <div class="row card-pad">
+
+      <div class="card-pad col-lg-4 text-center">
+        <div class="logo-grow card mb-3 box-shadow">
+          <div class="card-header">
+            <h3 class="my-0 font-weight-normal">Chihuahua</h3>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title pricing-card-title">FREE<small class="text-muted"></small></h2>
+            <ul class="list-prices list-unstyled mt-3 mb-4 d-flex flex-column">
+              <li>5 Matches Per Day</li>
+              <li>10 Messagers Per Day</li>
+              <li>Unlimited App Usage</li>
+            </ul>
+            <button type="button" class="btn-sign-up btn-lg btn-block btn-outline-danger mt-auto">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-pad col-lg-4 text-center">
+        <div class="logo-grow card mb-3 box-shadow">
+          <div class="card-header">
+            <h3 class="my-0 font-weight-normal">Labrador</h3>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title pricing-card-title">$49 <small class="text-muted">/ mo</small></h2>
+            <ul class="list-prices list-unstyled mt-3 mb-4 d-flex flex-column">
+              <li>Unlimited Matches</li>
+              <li>Unlimited Messages</li>
+              <li>Unlimited App Usage</li>
+            </ul>
+            <button type="button" class="btn-sign-up btn-lg btn-block btn-outline-danger mt-auto">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-pad col-lg-4 text-center">
+        <div class="logo-grow card mb-3 box-shadow">
+          <div class="card-header">
+            <h3 class="my-0 font-weight-normal">Mastiff</h3>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title pricing-card-title">$99 <small class="text-muted">/ mo</small></h2>
+            <ul class="list-prices list-unstyled mt-3 mb-4 d-flex flex-column">
+              <li>Priority Listing</li>
+              <li>Unlimited Messages + Matches</li>
+              <li>Unlimited App Usage</li>
+            </ul>
+            <button type="button" class="btn-sign-up btn-lg btn-block btn-outline-danger mt-auto">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <!-- <div class="continer-fluid text-center">
+      <div class="bottom-sec">
+        <h1 class="big-heading">Find the True Love of Your Dog's Life Today.</h1>
+        <div class="bottom-btn-pad">
+          <button type="button" class="btn btn-dark btn-lg mr-3"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg mr-3"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+      </div>
+
+    </div> -->
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <div class="container-fluid">
+      <!-- <div class="footer-icons">
+        <i class="fab fa-twitter"></i>
+      </div>
+      <div class="footer-icons">
+        <i class="fab fa-facebook-f"></i>
+      </div>
+      <div class="footer-icons">
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="footer-icons">
+        <i class="fas fa-envelope"></i>
+      </div> -->
+    </div>
+    <p>© Copyright 2020 #IBMapprentice</p>
+  </footer>
+
+  <!-- Local JS -->
+  <script src="./practice.js" charset="utf-8"></script>
+</body>
+
+</html>

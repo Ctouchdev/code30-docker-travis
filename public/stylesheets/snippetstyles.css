@@ -1,0 +1,1135 @@
+/* HTML */
+
+
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+  background-image: url("/images/snippet-background2.png");
+  -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+.title-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 18%;
+  text-align: center;
+}
+
+.logo-container {
+  position: relative;
+  margin-top: -4%;
+  flex: 1;
+}
+
+.btn-container {
+  position: relative;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+h5 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.04rem;
+  color: #FFF;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #404040;
+}
+
+.orange-color {
+  color: #FF9933;
+}
+
+.blue-color {
+  color: #0080FF;
+}
+
+.blue-back {
+  background-color: #0080FF;
+}
+
+.white-color {
+  color: #FFF;
+}
+
+.white-space {
+  display: flex;
+  white-space: pre-line;
+  text-align: left;
+  justify-content: center;
+}
+
+.enter-space {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: .8rem;
+  padding-bottom: 30px;
+  padding-top: 1%;
+}
+
+.big-heading-home {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  padding-bottom: 30px;
+}
+
+.med-heading {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+
+.pricing-heading {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  padding-top: 2%;
+}
+
+/* Title Section */
+
+#title {
+  text-align: center;
+  background-image: url("code30_back.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: #fff;
+}
+
+.container-fluid {
+  padding: 3% 10%;
+}
+
+
+.btn {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1rem;
+  transition: .5s;
+  margin-bottom: 1%;
+  text-align: center;
+  position: relative;
+}
+
+.btn-lg {
+  width: 86%;
+}
+
+.btn:hover {
+  color: #FF9933 !important;
+}
+
+.rotateLogo {
+  width: 30%;
+}
+
+/* Navigation Section */
+
+.navbar {
+  padding-bottom: .1rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 2.3rem;
+}
+
+.navbar-dark {
+  background-image: linear-gradient( #0841b3cb, #0d59f000);
+}
+
+.nav-item {
+  font-size: 1.3rem;
+  padding: 0 18px;
+  transition: .5s;
+  color: #FFF;
+}
+
+nav .navbar-nav li a {
+  color: #FFF!important;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+.user-welcome-pad {
+  padding-left: 5%;
+}
+
+
+.resources-pad {
+  padding-bottom: .1rem !important;
+}
+
+.resources-logo-pad {
+  padding: 1.4% 16% !important;
+}
+
+.resources-logo {
+  transition: 1s;
+}
+
+.resources-logo:hover {
+  transform: scale(1.1);
+}
+
+.color-change-orange {
+  transition: .5s;
+}
+
+.color-change-orange:hover {
+  color: #FF9933 !important;
+  transform: scale(1.05);
+}
+
+/* NEW SNIPPET SECTION */
+
+.opacity-form {
+  opacity: 100%;
+}
+
+.snippet-pad {
+  padding: 2% 9%;
+  transition: .1s ease;
+}
+.snippet-pad:hover {
+    padding: 2% 8.4%;
+    filter: drop-shadow(0px 43.6px 25.4px #00000030);
+  }
+
+.snippet-form {
+  padding: .8% 1.5%;
+  background-color: #F7A400;
+  border-radius: 7px;
+  mix-blend-mode: normal;
+  opacity: 94%;
+  filter: drop-shadow(23.6px 43.6px 25.4px #2a2aac30);
+}
+
+.snip-logo-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 8%;
+  text-align: center;
+}
+
+.snip-logo {
+  flex:2;
+  position: relative;
+  margin-top: -1%;
+  margin-bottom: -3%;
+  mix-blend-mode: normal;
+  opacity: 94%;
+}
+
+.snip-labels {
+  color: #FFF;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.snip-logo-css {
+  width: 25%;
+  min-width: 200px;
+}
+
+.laptop-container {
+  flex:1;
+  position: absolute;
+  width: 57%;
+  min-width: 300px;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -20%;
+  margin-right: -12%;
+  z-index: -2;
+  opacity: 50%;
+}
+
+.snip-button {
+  flex:1;
+  position: absolute;
+  width: 7%;
+  min-width: 36px;
+  bottom: 0;
+  margin-bottom: 2%;
+  border-top-left-radius: 0px!important;
+  border-bottom-left-radius: 0px!important;
+  border-bottom-right-radius: 0px!important;
+  border-top-right-radius: 12px!important;
+}
+
+/* Modal Creation Settings */
+.modal-body-container {
+    text-align: center;
+}
+
+.btn-wrap {
+    flex: 1;
+    display: block;
+    padding-bottom: 4%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 4%;
+}
+
+.del-btn {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: relative;
+    background-color: #FF9933!important;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 0px!important;
+   
+}
+
+.mod-btn-container {
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 8px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 12px;
+    margin-bottom: -3px;
+}
+
+.mod-btn-pad {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.del-btn-container {
+    vertical-align: top;
+    display: none;
+    margin-top: -6px;
+}
+
+.modal-btn {
+    margin-bottom: 1px!important;
+}
+
+
+
+
+/* Features Section */
+
+#features {
+  padding: 5% 10%;
+  min-height: 500px;
+  background-image: url("/images/resources_back.png")!important;
+  position: relative;
+}
+
+.feature-box {
+  padding: 6%;
+}
+
+.icon {
+  color: #ef8172;
+  padding-bottom: 5%;
+  transition: .5s;
+}
+
+.icon:hover {
+  color: #ff4c68;
+  transform: scale(1.2);
+}
+
+/* Testimonial Sections */
+
+#testimonials {
+  background-color: #0066CC;
+  color: #fff;
+}
+
+.testimonial-image {
+  width: 15%;
+  border-radius: 100%;
+  margin: 1%;
+}
+
+.carousel-item {
+  padding: 5% 12%;
+}
+
+/* Press Section */
+
+
+.pres-logo {
+  width: 13%;
+  margin: 40px;
+}
+
+/* Pricing Section */
+
+.card-deck {
+  padding: 1% 15% 5%;
+}
+
+.card-pad {
+  padding: 1% 5%;
+  padding-bottom: 3%;
+}
+
+.card-header {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.btn-sign-up {
+  font-weight: bold;
+  background-color: #fff;
+  color: #005CD4;
+  transition: .5s;
+}
+
+.btn-sign-up:hover {
+  transform: scale(1.145);
+}
+
+.card-title:hover {
+  transform: scale(1.2);
+}
+
+.list-prices {
+  padding-bottom: 5%;
+}
+
+.pricing-card-title {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+/* Media Resize Section */
+
+@media (max-width: 991px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .big-heading {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 4.5rem;
+    line-height: 1.4;
+    padding-bottom: 30px;
+  }
+
+  .rotateLogo {
+    transform: rotate(-20deg);
+    position: relative;
+    width: 75%;
+    z-index: 2;
+  }
+
+  .rotatePhone {
+    z-index: 2;
+    transform: rotate(0);
+    margin: 3% 1% 10%;
+  }
+
+  .card-deck {
+    justify-content: center;
+    position: relative;
+  }
+
+  .card-pad {
+    margin: 2% 11%;
+  }
+
+  .pricing-card-title {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+    line-height: 1.4;
+  }
+
+  .container-fluid {
+    padding: 3% 8%;
+  }
+
+  .feature-box {
+    padding: 2% 3%;
+  }
+
+}
+
+/* Bottom Section */
+
+#cta {
+  background-color: #0066CC;
+  color: #fff;
+}
+
+.bottom-sec {
+  padding: 5% 12% 1%;
+}
+
+.bottom-btn-pad {
+  padding: 5% 1% 0%;
+}
+
+footer {
+    flex-shrink: 0;
+  }
+  
+  .footer-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+.footer-icons {
+  margin: 1%;
+  display: inline-flex;
+}
+
+.modal-footer {
+  margin-bottom: .1%;
+}
+
+.modal-lg {
+  max-width: 1000px;
+}
+
+.modal-content {
+  border: none;
+}
+
+
+
+#laptop-bottom {
+  animation: lap-bot 5s ease-in-out alternate infinite;
+  transform-origin: center;
+}
+
+@keyframes lap-bot {
+  from {
+    transform: translateX(0px);
+  } to {
+    transform: translateX(13px);
+  }
+}
+
+#laptop-top {
+  animation: lap-top 5s ease-in-out alternate infinite;
+  transform-origin: center;
+}
+
+@keyframes lap-top {
+  from {
+    transform: translateY(0px);
+  } to {
+    transform: translateY(5px);
+  }
+}
+
+#keyboard {
+  animation: keys 5s ease-in-out alternate infinite;
+  transform-origin: center;
+}
+
+@keyframes keys {
+  from {
+    transform: translateY(0px) translateX(-15px) scaleY(1.2) scaleX(1.2);
+  } to {
+    transform: translateY(5px) translateX(-15px) scaleY(1.2) scaleX(1.2);
+  }
+}
+
+#disk-front {
+  animation: disk-frnt 5s alternate infinite;
+  transform-origin: 90% 10%;
+  transform-box: fill-box;
+}
+
+@keyframes disk-frnt {
+  from {
+    transform: rotateX(0deg);
+  } to {
+    transform: rotateX(30deg);
+  }
+}
+
+#lines-front {
+  animation: line-front 5s ease-in-out alternate infinite;
+  transform-origin: right;
+}
+
+@keyframes line-front {
+  from {
+    transform: skew(0deg,0deg);
+  } to {
+    transform: skew(2deg,-1deg);
+  }
+}
+
+#bubbles-front {
+  animation: bbls-front 23s ease-in-out alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes bbls-front {
+  0% {
+    transform: translateY(8px) scale(1) skewX(5deg);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.2) skewY(5deg);
+  }
+  100% {
+    transform: translateY(8px) scale(1) skewX(-10deg);
+  }
+}
+
+#bubbles-back {
+  animation: bbls-bk 23s ease-in-out alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes bbls-bk {
+  0% {
+    transform: translateY(8px) scale(1) skewX(5deg);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.2) skewY(-1deg);
+  }
+  100% {
+    transform: translateY(8px) scale(1) skewX(-2deg);
+  }
+}
+
+#wave-back {
+  animation: wave-bk 5s ease-in-out alternate infinite;
+  transform-origin: right;
+}
+
+@keyframes wave-bk {
+  from {
+    transform: skew(0deg,0deg);
+  } to {
+    transform: skew(-1deg,1deg);
+  }
+}
+
+
+#fn-key {
+  animation: fn 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes fn {
+  0% {
+    transform: translateY(0px);
+  } 97% {
+    transform: translateY(0px);
+  } 98% {
+    transform: translateY(1.4px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#ctrl {
+  animation: ctl 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes ctl {
+  0% {
+    transform: translateY(0px);
+  } 1% {
+    transform: translateY(1.4px);
+  } 3% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#caps-lock {
+  animation: caps 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes caps {
+  0% {
+    transform: translateY(0px);
+  } 19% {
+    transform: translateY(0px);
+  } 20% {
+    transform: translateY(1.4px);
+  } 22% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#tab {
+  animation: tb 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes tb {
+  0% {
+    transform: translateY(0px);
+  } 89% {
+    transform: translateY(0px);
+  } 90% {
+    transform: translateY(1.4px);
+  } 92% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#f {
+  animation: f-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes f-key {
+  0% {
+    transform: translateY(0px);
+  } 10% {
+    transform: translateY(0px);
+  } 11% {
+    transform: translateY(1.4px);
+  } 13% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#k {
+  animation: k-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes k-key {
+  0% {
+    transform: translateY(0px);
+  } 12% {
+    transform: translateY(0px);
+  } 13% {
+    transform: translateY(1.4px);
+  } 15% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#enter {
+  animation: enter-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes enter-key {
+  0% {
+    transform: translateY(0px);
+  } 20% {
+    transform: translateY(0px);
+  } 21% {
+    transform: translateY(1.4px);
+  } 23% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#backspace {
+  animation: backspace-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes backspace-key {
+  0% {
+    transform: translateY(0px);
+  } 40% {
+    transform: translateY(0px);
+  } 41% {
+    transform: translateY(1.4px);
+  } 43% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#y {
+  animation: y-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes y-key {
+  0% {
+    transform: translateY(0px);
+  } 50% {
+    transform: translateY(0px);
+  } 51% {
+    transform: translateY(1.4px);
+  } 53% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#o {
+  animation: o-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes o-key {
+  0% {
+    transform: translateY(0px);
+  } 59% {
+    transform: translateY(0px);
+  } 60% {
+    transform: translateY(1.4px);
+  } 63% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#e {
+  animation: e-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes e-key {
+  0% {
+    transform: translateY(0px);
+  } 67% {
+    transform: translateY(0px);
+  } 68% {
+    transform: translateY(1.4px);
+  } 69% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#w {
+  animation: w-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes w-key {
+  0% {
+    transform: translateY(0px);
+  } 80% {
+    transform: translateY(0px);
+  } 81% {
+    transform: translateY(1.4px);
+  } 83% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#q {
+  animation: q-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes q-key {
+  0% {
+    transform: translateY(0px);
+  } 10% {
+    transform: translateY(0px);
+  } 11% {
+    transform: translateY(1.4px);
+  } 13% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#escape {
+  animation: escape-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes escape-key {
+  0% {
+    transform: translateY(0px);
+  } 84% {
+    transform: translateY(0px);
+  } 85% {
+    transform: translateY(1.4px);
+  } 87% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#space {
+  animation: space-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes space-key {
+  0% {
+    transform: translateY(0px);
+  } 15% {
+    transform: translateY(0px);
+  } 16% {
+    transform: translateY(1.4px);
+  } 18% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+#alt-right {
+  animation: alt-right-key 5s ease infinite;
+  transform-origin: center;
+}
+@keyframes alt-right-key {
+  0% {
+    transform: translateY(0px);
+  } 60% {
+    transform: translateY(0px);
+  } 61% {
+    transform: translateY(1.4px);
+  } 63% {
+    transform: translateY(0px);
+  } 100% {
+    transform: translateY(0px);
+  }
+}
+
+.st34 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+  animation: line-1 5s linear alternate infinite;
+}
+@keyframes line-1 {
+  to {
+    stroke-dashoffset: 3;
+  }
+}
+
+.st35 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+  animation: line-2 5s linear alternate infinite;
+}
+@keyframes line-2 {
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+
+.st36 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-3 5s linear alternate infinite;
+}
+@keyframes line-3 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st37 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+  animation: line-4 5s linear alternate infinite;
+}
+@keyframes line-4 {
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+
+.st38 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+  animation: line-5 5s linear alternate infinite;
+}
+@keyframes line-5 {
+  to {
+    stroke-dashoffset: 5;
+  }
+}
+
+.st39 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-6 5s linear alternate infinite;
+}
+@keyframes line-6 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st40 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-7 5s linear alternate infinite;
+}
+@keyframes line-7 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st41{
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-8 5s linear alternate infinite;
+}
+@keyframes line-8 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st42 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-9 5s linear alternate infinite;
+}
+@keyframes line-9 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st43 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-10 5s linear alternate infinite;
+}
+@keyframes line-10 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st44 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-11 5s linear alternate infinite;
+}
+@keyframes line-11 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st45 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-12 5s linear alternate infinite;
+}
+@keyframes line-12 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st46 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-13 5s linear alternate infinite;
+}
+@keyframes line-13 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st47 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-14 5s linear alternate infinite;
+}
+@keyframes line-14 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st48 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-15 5s linear alternate infinite;
+}
+@keyframes line-15 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st49 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-16 5s linear alternate infinite;
+}
+@keyframes line-16 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st50 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: line-17 5s linear alternate infinite;
+}
+@keyframes line-17 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
