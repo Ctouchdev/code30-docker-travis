@@ -54,7 +54,10 @@ app.get("/appid/login", passport.authenticate(WebAppStrategy.STRATEGY_NAME, {
 	forceLogin: true
 }));
 
-app.get("/appid/callback", passport.authenticate(WebAppStrategy.STRATEGY_NAME));
+app.get("/appid/callback", passport.authenticate(WebAppStrategy.STRATEGY_NAME, {
+	successRedirect: "/code30",
+	forceLogin: true
+}));
 
 app.get("/appid/logout", (req, res) => {
 	WebAppStrategy.logout(req);
