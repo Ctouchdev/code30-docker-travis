@@ -51,7 +51,7 @@ passport.use(new WebAppStrategy({
 // Handle Login
 app.get("/appid/login", passport.authenticate(WebAppStrategy.STRATEGY_NAME, {
 	successRedirect: "/code30",
-	foreLogin: true
+	forceLogin: true
 }));
 
 app.get("/appid/callback", passport.authenticate(WebAppStrategy.STRATEGY_NAME));
