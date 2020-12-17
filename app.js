@@ -50,12 +50,12 @@ passport.use(new WebAppStrategy({
 
 // Handle Login
 app.get("/appid/login", passport.authenticate(WebAppStrategy.STRATEGY_NAME, {
-	successRedirect: "/code30",
+	successRedirect: "../public/views/pages/code30",
 	forceLogin: true
 }));
 
 app.get("/appid/callback", passport.authenticate(WebAppStrategy.STRATEGY_NAME, {
-	successRedirect: "/code30",
+	successRedirect: "../public/views/pages/code30",
 	forceLogin: true
 }));
 
@@ -83,10 +83,10 @@ app.post("/code30", (req, res) => {
 	}
 
 	userSnips.pop(post);
-	res.redirect("/code30");
+	res.redirect("../public/views/pages/code30");
 	}
 	else {
-		res.redirect("/code30");
+		res.redirect("../public/views/pages/code30");
 	}
 	
 });
@@ -107,12 +107,12 @@ app.post("/newsnippet", (req, res) => {
 
 	userSnips.push(post);
 
-	res.redirect("/code30");
+	res.redirect("../public/views/pages/code30");
 });
 
 
 app.get("/index", passport.authenticate(WebAppStrategy.STRATEGY_NAME, {
-	successRedirect: "/code30",
+	successRedirect: "../public/views/pages/code30",
 	forceLogin: true,
 	failureRedirect: "https://code30.mybluemix.net/appid/login",
 	failureFlash : true // allow flash messages
