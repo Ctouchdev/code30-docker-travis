@@ -5,15 +5,18 @@
   "main": "app.js",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "mocha --reporter list"
   },
   "dependencies": {
     "cfenv": "^1.2.2",
+    "chai": "^4.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "ibmcloud-appid": "^6.1.1",
     "jquery.json-viewer": "^1.4.0",
+    "mocha": "^8.2.1",
     "mongoose": "^5.11.7",
     "passport": "^0.4.1"
   }
