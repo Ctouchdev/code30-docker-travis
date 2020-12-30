@@ -1,0 +1,10 @@
+{
+  "apikey": "4auxesXxh9nbCw3CQ59N-0xQpi9j2Fn10G64Kn6qzByo",
+  "host": "fea9e7d7-e236-445f-85b5-d9a693a53faa-bluemix.cloudantnosqldb.appdomain.cloud",
+  "iam_apikey_description": "Auto-generated for key 7fa719e4-f8a4-4c52-80ed-382c3491fee8",
+  "iam_apikey_name": "Cloudant-code30-creds",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/2b299b15a22542eebbc483b13e90adcd::serviceid:ServiceId-9ae6bf8e-c302-46eb-b271-3674d60bcdf4",
+  "url": "https://fea9e7d7-e236-445f-85b5-d9a693a53faa-bluemix.cloudantnosqldb.appdomain.cloud",
+  "username": "fea9e7d7-e236-445f-85b5-d9a693a53faa-bluemix"
+}

@@ -9,15 +9,20 @@
     "test": "mocha --reporter list"
   },
   "dependencies": {
+    "@cloudant/cloudant": "^4.3.0",
     "cfenv": "^1.2.2",
     "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "ibmcloud-appid": "^6.1.1",
+    "jquery": "^3.5.1",
     "jquery.json-viewer": "^1.4.0",
+    "jsdom": "^16.4.0",
     "mocha": "^8.2.1",
     "mongoose": "^5.11.7",
+    "nodemon": "^2.0.6",
     "passport": "^0.4.1"
   }
 }

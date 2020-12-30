@@ -25,6 +25,7 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
+echo "/.env"
 
 # Optional npm cache directory
 .npm

@@ -90,9 +90,11 @@ footer {
   color: #FFF;
   text-align: center;
   padding-top: 0;
+  padding-bottom: 0;
   padding-left: 30%;
   padding-right: 30%;
-  margin-bottom: 10px!important;
+  margin-bottom: 4px!important;
+  margin-top: 1px!important;
 }
 
 hr {
@@ -105,7 +107,7 @@ hr {
   border-width:0;
   background: linear-gradient(to right, #ffffff00 0, #f8a500 50%, #ffffff00 100%);
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .signin-text {
